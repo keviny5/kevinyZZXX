@@ -26,11 +26,6 @@
  $businessCase          = stripslashes($businesscase);
  
  /** This part is for the important log in information, the project id and the api key is being used to enter the ticket info. Also it will initialize the variables  **/
- $strUsername = 'apiuser@travelclick.com';
- $strPassword = 'Trav3lCl!ck2014!';
- $strUrl = 'http://tcweb.smartqweb.com/api/v1/projects/22/tickets';
- $strApi = 'a8dcba6edb13de3d95849f8de085372c';
- $strCurlLog = $strUsername.':'.$strPassword;
  
  /** This will initalize the php curl so it can send information to an exeternal application. **/
  $curl = curl_init();
