@@ -31,12 +31,7 @@
 Application build 1/17/14 Erik Vecchione
 
 smartQ API Credentials*/
- $strUsername = 'apiuser@travelclick.com';
- $strPassword = 'Trav3lCl!ck2014!';
- $strUrl = 'http://tcweb.smartqweb.com/api/v1/projects/'.$_GET['pid'].'/tickets?count=1000';
- $strBase = 'http://tcweb.smartqweb.com/api/v1/projects';
- $strApi = 'a8dcba6edb13de3d95849f8de085372c';
- $strCurlLog = $strUsername.':'.$strPassword;
+ 
 
 /** gets JSON api feed for header titles - we need this for page titles  **/
 $curl = curl_init();
