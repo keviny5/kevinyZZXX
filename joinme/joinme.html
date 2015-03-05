@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>HTML</title>
+		<meta name="description" content="">
+		<meta name="author" content="Espada">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="jquery-ui-1.11.1/jquery-ui.css">
+		<script src="jquery-ui-1.11.1/jquery.js"></script>
+		<script src="jquery-ui-1.11.1/jquery-ui.js"></script>
+		<script src="jquery.stellar.js"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
+		<link href="assets/css/custom.css" rel="stylesheet">
+
+		<link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+		<link href="owl-carousel/owl.theme.css" rel="stylesheet">
+		<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href=" assets/ico/favicon.png">
+
+		<style>
+			#navbar #free-trial a {
+				font-size: 20px;
+				background-color: white;
+				color: orange;
+			}
+			#navbar {
+				color: white;
+				background: orange;
+				text-align: center;
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-size: 20px;
+				font-weight: 200;
+			}
+			#navbar .nav-but a {
+				color: black;
+			}
+
+			#navbar a {
+				color: white;
+			}
+			#navbar a:hover {
+				background: #FFB73D;
+			}
+		</style>
+	</head>
+
+	<body  data-stellar-background-ratio="0.5">
+		<nav class="navbar navbar-fixed-top" id="navbar">
+
+			<ul class="nav col-md-2 ">
+				<li>
+					<a> Join.me </a>
+				</li>
+			</ul>
+			<ul class="nav nav-pills col-md-8  ">
+				<li >
+					<a>why join.me?</a>
+				</li>
+				<li >
+					<a>How it Works</a>
+				</li>
+				<li >
+					<a>Features</a>
+				</li>
+				<li >
+					<a>Enterprise</a>
+				</li>
+				<li >
+					<a>Pricing</a>
+				</li>
+				<li  id="free-trial">
+					<a>Free trial</a>
+				</li>
+			</ul>
+			<ul class="nav nav-pills col-md-2 nav-but">
+				<li >
+					<a>Log In</a>
+				</li>
+				<li>
+					<a>In</a>
+				</li>
+			</ul>
+		</nav>
+		<style>
+			#hero {
+				font-size: 65px;
+				text-shadow: 3px 2px rgba(0,0,0,.4);
+				font-family: 'Swiss721BT-BlackRounded', Helvetica, Arial, sans-serif;
+				color: white;
+				font-weight: 900;
+				letter-spacing: -1px;
+				line-height: 120%
+			}
+			body {
+				background-image: url(img/conducting-a-meeting.jpg);
+				font-family: 'Swiss721BT-BlackRounded', Helvetica, Arial, sans-serif;
+			}
+
+			.hero-in p {
+				font-family: 'Swiss721BT-BlackRounded', Helvetica, Arial, sans-serif;
+				font-weight: 700;
+			}
+			#input-box {
+
+				border-radius: 25px;
+				background-color: white;
+				margin-top: 100px;
+				margin-bottom: 50px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+
+			#hero-box {
+				margin-top: 50px;
+				padding: 25px;
+			}
+			#big-box {
+				position: relative;
+				top: 150px;
+				border: none;
+				border-radius: 25px;
+				opacity: 0.8;
+				background-color: gray
+			}
+			#nav-side {
+				z-index: 10;
+				position: fixed;
+				right: 34px;
+				top: 290px;
+			}
+
+			#nav-side a {
+				display: none;
+				color: white;
+				border-radius: 5px;
+				background-color: orange;
+				border: none;
+				position: absolute;
+				padding: 5px;
+			}
+
+			#nav-side ul {
+				list-style-image: url('img/circle-outline-32.png');
+			}
+			#box-2 {
+				background-color: white;
+				color: black;
+				font-family: 'Swiss721BT-BlackRounded', Helvetica, Arial, sans-serif;
+				padding-bottom: 50px;
+				padding-top: 50px;
+			}
+
+			#box-2 p {
+				text-align: center;
+			}
+		</style>
+
+		<div  id="nav-side">
+			<div>
+				<ul >
+					<li class="nav-side-li" onclick="clickscroll_1();">
+						<a  style="left: -52.5px;"  >home</a>
+					</li>
+					<li class="nav-side-li" onclick="clickscroll_2();">
+						<a  style="left: -53px;" onclick="clickscroll_2()";>about</a>
+					</li>
+					<li class="nav-side-li" onclick="clickscroll_3();">
+						<a  style="left: -66px;" onclick="clickscroll_3()">features</a>
+					</li>
+					<li class="nav-side-li" onclick="clickscroll_4();">
+						<a  style="left: -75.5px;" onclick="clickscroll_4()">customers</a>
+					</li>
+					<li class="nav-side-li">
+						<a href="" style="left: -56px;">pricing</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div style="position: relative; top:0px;" data-stellar-ratio="1" id="box-1">
+			<div class="container"  id="big-box" >
+				<img src="img/jmLogo_107x79.png" style="position: absolute ; top:-20px; left:45%; ">
+				<div class="col-md-5 col-md-offset-1 " id="hero-box" >
+					<p id="hero">
+						Better meetings for all.
+					</p>
+					<h4>Instant screen sharing with powerful meeting tools and unlimited audio. <a>Start free trial</a></h4>
+				</div>
+				<div class="col-md-4 col-md-offset-1 hero-in row" id="input-box">
+					<div class="row">
+						<div class="col-md-9" style="padding-bottom: 10px;">
+							<p style="color:orange; font-size: 30px;">
+								Start meeting
+							</p>
+							<p>
+								quick download to start a meeting
+							</p>
+						</div>
+						<div class="col-md-3">
+							<img src="img/play-3-64-o.png"/ style="padding-top: 10px">
+						</div>
+					</div>
+
+					<div class="row" style="border-top-style:solid;border-width:2px; padding-top: 10px">
+						<div class="col-md-9 ">
+							<p style="color:#99FF00; font-size: 30px;">
+								join meeting
+							</p>
+							<input type="text" value="enter code">
+						</div>
+						<div class="col-md-3">
+							<img src="img/play-3-64-g.png"/ style="padding-top: 10px">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div style="position:absolute; top:99%; width: 100%"  >
+			<div id="box-2">
+				<div class="container" >
+					<div class="col-md-10 col-md-offset-1" >
+						<p style="font-size: 50px; font-weight: 900" id="jump-2">
+							The secret is simplicity.
+						</p>
+						<p style="font-size: 25px; font-weight: 400">
+							Easy to start, easy to join, easy to manage, join.me takes everything bad about physical and online meetings and makes them better. That’s why millions of new people, from universities, startups and Fortune 500 companies, use join.me every month to simply and more effectively share their ideas and work, making join.me the fastest growing collaboration product in the world.
+						</p>
+					</div>
+
+					<div class="col-md-2 col-md-offset-4" >
+						<a class="btn btn-large btn-success" id="pricingStartFreeTrial" href="https://www.join.me/cls/registration">Start free trial</a>
+					</div>
+					<div class="col-md-2" >
+						<a class="btn btn-large btn-success" id="Takeatour" href="https://secure.join.me/buypro?currency=USD">Take a tour</a>
+					</div>
+					<style>
+						#pricingStartFreeTrial {
+							color: gray;
+							background: #85bf00;
+							font-size: 20px;
+							padding: 10px;
+							border-color: #85bf00;
+						}
+						#pricingStartFreeTrial:hover {
+							color: white;
+						}
+
+						#Takeatour {
+							color: orange;
+							background: #e5e5e5;
+							font-size: 20px;
+							padding: 10px;
+							border-color: #e5e5e5;
+						}
+						#Takeatour:hover {
+							color: gray;
+						}
+					</style>
+				</div>
+			</div>
+			<style>
+				#box-3 {
+					background-color: gray;
+					color: white;
+					padding-top: 100px;
+					padding-bottom: 100px;
+				}
+				#box-3 h3 {
+					text-align: center;
+				}
+				#box-3 p {
+					text-align: center;
+				}
+				#big_circle {
+					position: absolute;
+					top: -80px;
+				}
+
+			</style>
+			<div  id="box-3" style="width: 100%"  >
+				<div class="container"  >
+					<div class="col-md-3">
+
+						<img src="img/circle-outline-256.png" id="big_circle">
+						<h3>27M</h3>
+						<p>
+							meetings last year
+						</p>
+					</div>
+					<div class="col-md-3 col-md-offset-1">
+						<img src="img/circle-outline-256.png" id="big_circle">
+						<h3> >1m </h3>
+						<p>
+							new users per month
+						</p>
+					</div>
+					<div class="col-md-3 col-md-offset-1">
+						<img src="img/circle-outline-256.png" id="big_circle">
+						<h3>99.99%</h3>
+						<p>
+							industry-leading uptime
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="box-4">
+				<div class="container">
+					<div class="col-md-10 col-md-offset-1">
+						<h2>Faster, easier, better.</h2>
+						<p>
+							With join.me by LogMeIn, you and your team will be more productive and close more business, together. join.me is an intuitive online meeting solution that’s built and priced so everyone in the company can have an account. It’s ideal for sales demos, idea generation, external presentations and ad hoc get-togethers.
+						</p>
+					</div>
+
+				</div>
+				<div class="content container" style="position: relative; top:50px">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+
+							<div id="owl-demo" class="owl-carousel">
+								<div class="item">
+									<h2>Unlimited Audio </h2>
+									<p>
+										While other meeting tools charge extra for audio services, join.me offers unlimited audio using VoIP and dedicated conference lines in over 40 countries. Unlimited minutes and unlimited conference meetings, mean you'll never be charged for minutes, overages or other fees.
+									</p>
+								</div>
+								<div class="item">
+									<h2>Continuous Collaboration</h2>
+									<p>
+
+										Unlike other products, join.me is fast to connect, easy to use and affordable to own. This makes it possible to spread join.me throughout your organization so that everyone contributes to the bottom-line. More collaboration means better ideas.
+
+									</p>
+								</div>
+								<div class="item">
+									<h2>A flat learning curve</h2>
+									<p>
+										join.me requires virtually no training. The interface is so intuitive, you spend more time meeting and less time learning how to use it.
+									</p>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					</div>
+					<div id="box-5" data-stellar-background-ratio="2.5" >
+					<div class="container">
+						<h1>Loved by the world’s most
+						innovative companies.</h1>
+					<div>
+					</div>
+					
+				</div>
+				<style>
+				#box-5{
+					position:relative;
+					top:100px;
+					width: 100%;
+					background-image: url("img/free-photo-building-812.jpg");
+					background-repeat: no-repeat;
+					padding-top:150px;
+					padding-bottom: 150px;
+				}
+				#box-5 h1{
+					color:white;
+					font-weight: 900;
+					font-size: 70px;
+					text-align: center;
+					
+					
+				}
+				
+					#owl-demo {
+
+					}
+
+					#owl-demo .item {
+						border-radius: 25px;
+						margin: 3px;
+						background-color: white;
+						padding: 25px;
+					}
+					#owl-demo .item h2 {
+						color: orange;
+						font-weight: 900;
+					}
+					#owl-demo .item p {
+						color: gray;
+					}
+					#owl-demo .info {
+						display: none;
+					}
+
+					#box-4 {
+						background-color: #f8f8f8;
+						width: 100%;
+						padding-top: 100px;
+						padding-bottom: 100px;
+						position: relative;
+					}
+					#box-4 h2 {
+						font-size: 50px;
+						font-weight: 500;
+						text-align: center;
+					}
+					#box-4 p {
+						font-size: 20px;
+						font-weight: 200;
+						text-align: center;
+					}
+				</style>
+
+			
+	</body>
+	<script>
+		$(function() {
+        
+			$(".nav-side-li").mouseenter(function() {
+				var node = $(this);
+				var node2 = node.find("a");
+				node.css("list-style-image", "url('img/circle-32.png')");
+				node2.fadeIn("fast");
+
+				node.mouseleave(function() {
+					node.css("list-style-image", "url('img/circle-outline-32.png')");
+					node2.fadeOut("fast");
+				});
+			});
+
+			$.stellar();
+			$("#owl-demo").owlCarousel({
+
+				items : 1,
+				itemsDesktop : [1199, 3],
+				itemsDesktopSmall : [979, 3],
+				navigation : true
+			});
+
+			/*			$("#home").click(function() {
+
+			 var x = $("#box-1").offset().top;
+			 var y = x / 130 - 0.1;
+			 $("#big-box").css("opacity", y);});*/
+
+			$(window).scroll(function() {
+
+				var x = $(document).scrollTop();
+				$("#show").html("dis " + x);
+				var y = 0.9 - x / 400;
+				if (y <= 0) {
+					y = 0.1;
+				}
+				$("#big-box").css("opacity", y);
+
+			});
+			var prev=$(".owl-prev");
+			 prev.html("<img src='img/arrow-88-32.png' >");
+			 prev.css({"position":"relative","top":"-160px","left":"-55%" });
+			 
+			 var next=$(".owl-next");
+			 next.html("<img src='img/arrow-24-32.png' >");
+			 next.css({"position":"relative","top":"-160px","left":"55%" });
+		});
+
+		function clickscroll_1() {
+
+			$("body,html").animate({
+				scrollTop : 0
+			}, 1000);
+		}
+
+		function clickscroll_2() {
+			var pos = $("#box-2").offset().top;
+			$("body,html").animate({
+				scrollTop : (pos)
+			}, 1000);
+		}
+
+		function clickscroll_3() {
+			var pos = $("#box-4").offset().top;
+			$("body,html").animate({
+				scrollTop : (pos)
+			}, 1000);
+		}
+
+		function clickscroll_4() {
+			var pos = $("#box-4").offset().top;
+			$("body,html").animate({
+				scrollTop : (pos - 150)
+			}, 1000);
+		}
+
+	</script>
+	<script src=" owl-carousel/owl.carousel.js"></script>
+
+	<script src=" assets/js/bootstrap-collapse.js"></script>
+	<script src=" assets/js/bootstrap-transition.js"></script>
+	<script src=" assets/js/bootstrap-tab.js"></script>
+	<script src=" assets/js/google-code-prettify/prettify.js"></script>
+	<script src=" assets/js/application.js"></script>
+
+</html>

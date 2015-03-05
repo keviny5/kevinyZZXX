@@ -1,0 +1,857 @@
+/*General Styles */
+
+
+
+
+a {
+  text-decoration: none;
+  color: #0574B3;
+}
+
+a:visited {text-decoration:none; color:#385E9E;}
+a:hover {text-decoration: none; color:#385E9E;}
+a:active {text-decoration:none; color:#385E9E;}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #eaeaea;
+}
+body,div,h1 {
+  font-family:'trebuchet ms', verdana, arial;
+  }
+h1{font-size:large;font-weight:400;margin:0;}
+h2{color:#333;font-size:small;font-weight:400;margin:0;}
+pre{background-color:#eee;border:1px solid #ddd;border-left-width:5px;color:#333;font-size:small;overflow-x:auto;padding:15px;}
+pre.normal{background-color:transparent;border:none;border-left-width:0;overflow-x:auto;}
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+.header {
+  height: 100px;
+  padding: 50px 5px 10px;
+  margin: 0 40px 0;
+}
+
+.logo {
+  display: inline-block;
+}
+.pageHeading {
+  display: inline-block;
+  padding: 0 0 0 50px;
+}
+
+.pageHeading h1 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 24px;
+}
+.pageHeading h1, .pageHeading p {
+  text-align: left;
+}
+
+.footer {
+  color: #777 !important;
+  padding: 15px;
+  margin: 33px 0 0 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+.footer a{
+  color: #ccc !important;
+}
+#wrapper {
+  margin: 0 auto;
+  background: #fff;
+  -moz-box-shadow: 0px 6px 23px #333333;
+  -webkit-box-shadow: 0px 6px 23px #3333333;
+  box-shadow: 0px 6px 23px #333333;
+  width: 960px;
+  padding-bottom: 60px;
+  height: auto;
+}
+#navigation {
+background: rgb(152,161,165); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzk4YTFhNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0OTRjNTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(152,161,165,1) 1%, rgba(73,76,84,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(152,161,165,1)), color-stop(100%,rgba(73,76,84,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(152,161,165,1) 1%,rgba(73,76,84,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(152,161,165,1) 1%,rgba(73,76,84,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(152,161,165,1) 1%,rgba(73,76,84,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(152,161,165,1) 1%,rgba(73,76,84,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98a1a5', endColorstr='#494c54',GradientType=0 ); /* IE6-8 */
+  border-radius: 3px;
+  color: #fff;
+  height: 30px;
+
+}
+.myform {
+  margin: 35px 25px 0 15px;
+}
+.myform label{
+  text-align: right;
+}
+.myformLabels {
+  display: inline-block;
+  width:15%;
+  float: left;
+  padding-bottom:20px;
+  text-align: right;
+}
+.myformFields {
+  display: inline-block;
+  width:85%;
+  clear: right;
+  padding-bottom:20px;
+
+}
+.btn {
+  width: 100px;
+  height: 35px;
+  background: rgb(138,187,215); /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhhYmJkNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNjZkYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  rgba(138,187,215,1) 0%, rgba(6,109,171,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(138,187,215,1)), color-stop(100%,rgba(6,109,171,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(138,187,215,1) 0%,rgba(6,109,171,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(138,187,215,1) 0%,rgba(6,109,171,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(138,187,215,1) 0%,rgba(6,109,171,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(138,187,215,1) 0%,rgba(6,109,171,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8abbd7', endColorstr='#066dab',GradientType=0 ); /* IE6-8 */
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 18px;
+  border: 0;
+  }
+ .btnReset {
+  width: 100px;
+  height: 35px;
+  background: rgb(255,89,73); /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNTk0OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZTJiMmIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  rgba(255,89,73,1) 0%, rgba(206,43,43,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,89,73,1)), color-stop(100%,rgba(206,43,43,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(255,89,73,1) 0%,rgba(206,43,43,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(255,89,73,1) 0%,rgba(206,43,43,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(255,89,73,1) 0%,rgba(206,43,43,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(255,89,73,1) 0%,rgba(206,43,43,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5949', endColorstr='#ce2b2b',GradientType=0 ); /* IE6-8 */
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+  } 
+ #content {
+  height: 100%;
+  padding:20px;
+ }
+input, textarea {
+-webkit-border-radius: 5px;
+border-radius: 5px;
+background: #fff;
+padding: 2px 5px;
+-webkit-box-shadow: 0px 0px 4px rgba(01,01,01, 0.22);
+box-shadow: 0px 0px 4px rgba(01,01,01, 0.22);
+border: 1px solid #C0C0C0;
+placeholder: search;
+}
+label {
+padding-right: 10px;
+}
+#systemMenu {
+  display: inline-block;
+  float: left;
+  width: 33%;
+  color: #fff;
+  padding: 5px 10px 0 15px;
+}
+
+#systemMenu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px
+}
+#systemMenu a:hover {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 12px
+}
+#systemMenu a:current {
+  font-weight: bold;
+}
+
+#boardmenu {
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+    margin: 3px 20px 0 0;
+    width: 33%;
+}
+
+#boardmenu form, form#nav {
+float:right !important;
+margin: 3px 10px 0 0;
+}
+
+#main {
+  margin:0px 25px 0px 40px;
+  height: inherit;
+  clear: both;
+  min-height: 75%;
+  height: auto;
+  padding:0 15px 15px 0;
+}
+
+body, p {
+  margin: 0;
+  font-size:0.9em; color: #000000; font-family: Arial,Georgia,Serif;  font-size: 12px;  }
+p.error {font-size:0.9em; color: #FF0000; font-family: Arial,Georgia,Serif;font-weight:bold; margin-top: 4cm;}
+  
+
+
+/*Table Styles 
+*/
+
+/* tables */
+#TicketTable {
+width: 100%;
+clear: both;
+}
+
+thead {
+  background: #95B9E7;
+}
+
+/*
+ *  File:         demo_table.css
+ *  CVS:          $Id$
+ *  Description:  CSS descriptions for DataTables demo pages
+ *  Author:       Allan Jardine
+ *  Created:      Tue May 12 06:47:22 BST 2009
+ *  Modified:     $Date$ by $Author$
+ *  Language:     CSS
+ *  Project:      DataTables
+ *
+ *  Copyright 2009 Allan Jardine. All Rights Reserved.
+ *
+ * ***************************************************************************
+ * DESCRIPTION
+ *
+ * The styles given here are suitable for the demos that are used with the standard DataTables
+ * distribution (see www.datatables.net). You will most likely wish to modify these styles to
+ * meet the layout requirements of your site.
+ *
+ * Common issues:
+ *   'full_numbers' pagination - I use an extra selector on the body tag to ensure that there is
+ *     no conflict between the two pagination types. If you want to use full_numbers pagination
+ *     ensure that you either have "example_alt_pagination" as a body class name, or better yet,
+ *     modify that selector.
+ *   Note that the path used for Images is relative. All images are by default located in
+ *     ../images/ - relative to this CSS file.
+ */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */
+
+.dataTables_wrapper {
+  position: relative;
+  clear: both;
+  zoom: 1; /* Feeling sorry for IE */
+}
+
+.dataTables_processing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 30px;
+  margin-left: -125px;
+  margin-top: -15px;
+  padding: 14px 0 2px 0;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+  background-color: white;
+}
+
+.dataTables_length {
+  width: 40%;
+  float: left;
+  margin: 10px 0 10px;
+}
+
+.dataTables_filter {
+  width: 50%;
+  float: right;
+  text-align: right;
+  margin: 10px 0 20px;
+}
+
+.dataTables_info {
+  width: 60%;
+  float: left;
+  font-weight: bold;
+}
+
+.dataTables_paginate {
+  float: right;
+  text-align: right;
+}
+
+/* Pagination nested */
+.paginate_disabled_previous, .paginate_enabled_previous,
+.paginate_disabled_next, .paginate_enabled_next {
+  height: 19px;
+  float: left;
+  cursor: pointer;
+  *cursor: hand;
+  color: #111 !important;
+}
+.paginate_disabled_previous:hover, .paginate_enabled_previous:hover,
+.paginate_disabled_next:hover, .paginate_enabled_next:hover {
+  text-decoration: none !important;
+}
+.paginate_disabled_previous:active, .paginate_enabled_previous:active,
+.paginate_disabled_next:active, .paginate_enabled_next:active {
+  outline: none;
+}
+
+.paginate_disabled_previous,
+.paginate_disabled_next {
+  color: #666 !important;
+}
+.paginate_disabled_previous, .paginate_enabled_previous {
+  padding-left: 23px;
+}
+.paginate_disabled_next, .paginate_enabled_next {
+  padding-right: 23px;
+  margin-left: 10px;
+}
+
+.paginate_disabled_previous {
+  background: url('../images/back_disabled.png') no-repeat top left;
+}
+
+.paginate_enabled_previous {
+  background: url('../images/back_enabled.png') no-repeat top left;
+}
+.paginate_enabled_previous:hover {
+  background: url('../images/back_enabled_hover.png') no-repeat top left;
+}
+
+.paginate_disabled_next {
+  background: url('../images/forward_disabled.png') no-repeat top right;
+}
+
+.paginate_enabled_next {
+  background: url('../images/forward_enabled.png') no-repeat top right;
+}
+.paginate_enabled_next:hover {
+  background: url('../images/forward_enabled_hover.png') no-repeat top right;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */
+table.display {
+  margin: 0 auto;
+  clear: both;
+  width: 100%;
+  
+  /* Note Firefox 3.5 and before have a bug with border-collapse
+   * ( https://bugzilla.mozilla.org/show%5Fbug.cgi?id=155955 ) 
+   * border-spacing: 0; is one possible option. Conditional-css.com is
+   * useful for this kind of thing
+   *
+   * Further note IE 6/7 has problems when calculating widths with border width.
+   * It subtracts one px relative to the other browsers from the first column, and
+   * adds one to the end...
+   *
+   * If you want that effect I'd suggest setting a border-top/left on th/td's and 
+   * then filling in the gaps with other borders.
+   */
+}
+
+table.display thead th {
+  padding: 3px 18px 3px 10px;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  * cursor: hand;
+}
+
+table.display tfoot th {
+  padding: 3px 18px 3px 10px;
+  border-top: 1px solid black;
+  font-weight: bold;
+}
+
+table.display tr.heading2 td {
+  border-bottom: 1px solid #aaa;
+}
+
+table.display td {
+  padding: 3px 10px;
+}
+
+table.display td.center {
+  text-align: center;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+
+.sorting_asc {
+  background: url('../images/sort_asc.png') no-repeat center right;
+  min-width: 125px;
+}
+
+.sorting_desc {
+  background: url('../images/sort_desc.png') no-repeat center right;
+  min-width: 125px;
+}
+
+.sorting {
+  background: url('../images/sort_both.png') no-repeat center right;
+  min-width: 125px;
+}
+
+.sorting_asc_disabled {
+  background: url('../images/sort_asc_disabled.png') no-repeat center right;
+}
+
+.sorting_desc_disabled {
+  background: url('../images/sort_desc_disabled.png') no-repeat center right;
+}
+ 
+table.display thead th:active,
+table.display thead td:active {
+  outline: none;
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */
+table.display tr.odd.gradeA {
+  background-color: #ddffdd;
+}
+
+table.display tr.even.gradeA {
+  background-color: #eeffee;
+}
+
+table.display tr.odd.gradeC {
+  background-color: #ddddff;
+}
+
+table.display tr.even.gradeC {
+  background-color: #eeeeff;
+}
+
+table.display tr.odd.gradeX {
+  background-color: #ffdddd;
+}
+
+table.display tr.even.gradeX {
+  background-color: #ffeeee;
+}
+
+table.display tr.odd.gradeU {
+  background-color: #ddd;
+}
+
+table.display tr.even.gradeU {
+  background-color: #eee;
+}
+
+
+tr.odd {
+  background-color: #E2E4FF;
+}
+
+tr.even {
+  background-color: white;
+}
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */
+.dataTables_scroll {
+  clear: both;
+}
+
+.dataTables_scrollBody {
+  *margin-top: -1px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.top, .bottom {
+  padding: 15px;
+  background-color: #F5F5F5;
+  border: 1px solid #CCCCCC;
+}
+
+.top .dataTables_info {
+  float: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.dataTables_empty {
+  text-align: center;
+}
+
+tfoot input {
+  margin: 0.5em 0;
+  width: 100%;
+  color: #444;
+}
+
+tfoot input.search_init {
+  color: #999;
+}
+
+td.group {
+  background-color: #d1cfd0;
+  border-bottom: 2px solid #A19B9E;
+  border-top: 2px solid #A19B9E;
+}
+
+td.details {
+  background-color: #d1cfd0;
+  border: 2px solid #A19B9E;
+}
+
+
+.example_alt_pagination div.dataTables_info {
+  width: 40%;
+}
+
+.paging_full_numbers {
+  width: 400px;
+  height: 22px;
+  line-height: 22px;
+}
+
+.paging_full_numbers a:active {
+  outline: none
+}
+
+.paging_full_numbers a:hover {
+  text-decoration: none;
+}
+
+.paging_full_numbers a.paginate_button,
+  .paging_full_numbers a.paginate_active {
+  border: 1px solid #aaa;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 2px 5px;
+  margin: 0 3px;
+  cursor: pointer;
+  *cursor: hand;
+  color: #333 !important;
+}
+
+.paging_full_numbers a.paginate_button {
+  background-color: #ddd;
+}
+
+.paging_full_numbers a.paginate_button:hover {
+  background-color: #ccc;
+  text-decoration: none !important;
+}
+
+.paging_full_numbers a.paginate_active {
+  background-color: #99B3FF;
+}
+
+table.display tr.even.row_selected td {
+  background-color: #B0BED9;
+}
+
+table.display tr.odd.row_selected td {
+  background-color: #9FAFD1;
+}
+
+
+/*
+ * Sorting classes for columns
+ */
+/* For the standard odd/even */
+tr.odd td.sorting_1 {
+  background-color: #D3D6FF;
+  text-align: center;
+}
+
+tr.odd td.sorting_2 {
+  background-color: #DADCFF;
+}
+
+tr.odd td.sorting_3 {
+  background-color: #E0E2FF;
+}
+
+tr.even td.sorting_1 {
+  background-color: #EAEBFF;
+  text-align: center;
+}
+
+tr.even td.sorting_2 {
+  background-color: #F2F3FF;
+}
+
+tr.even td.sorting_3 {
+  background-color: #F9F9FF;
+}
+
+
+/* For the Conditional-CSS grading rows */
+/*
+  Colour calculations (based off the main row colours)
+  Level 1:
+    dd > c4
+    ee > d5
+  Level 2:
+    dd > d1
+    ee > e2
+ */
+tr.odd.gradeA td.sorting_1 {
+  background-color: #c4ffc4;
+}
+
+tr.odd.gradeA td.sorting_2 {
+  background-color: #d1ffd1;
+}
+
+tr.odd.gradeA td.sorting_3 {
+  background-color: #d1ffd1;
+}
+
+tr.even.gradeA td.sorting_1 {
+  background-color: #d5ffd5;
+}
+
+tr.even.gradeA td.sorting_2 {
+  background-color: #e2ffe2;
+}
+
+tr.even.gradeA td.sorting_3 {
+  background-color: #e2ffe2;
+}
+
+tr.odd.gradeC td.sorting_1 {
+  background-color: #c4c4ff;
+}
+
+tr.odd.gradeC td.sorting_2 {
+  background-color: #d1d1ff;
+}
+
+tr.odd.gradeC td.sorting_3 {
+  background-color: #d1d1ff;
+}
+
+tr.even.gradeC td.sorting_1 {
+  background-color: #d5d5ff;
+}
+
+tr.even.gradeC td.sorting_2 {
+  background-color: #e2e2ff;
+}
+
+tr.even.gradeC td.sorting_3 {
+  background-color: #e2e2ff;
+}
+
+tr.odd.gradeX td.sorting_1 {
+  background-color: #ffc4c4;
+}
+
+tr.odd.gradeX td.sorting_2 {
+  background-color: #ffd1d1;
+}
+
+tr.odd.gradeX td.sorting_3 {
+  background-color: #ffd1d1;
+}
+
+tr.even.gradeX td.sorting_1 {
+  background-color: #ffd5d5;
+}
+
+tr.even.gradeX td.sorting_2 {
+  background-color: #ffe2e2;
+}
+
+tr.even.gradeX td.sorting_3 {
+  background-color: #ffe2e2;
+}
+
+tr.odd.gradeU td.sorting_1 {
+  background-color: #c4c4c4;
+}
+
+tr.odd.gradeU td.sorting_2 {
+  background-color: #d1d1d1;
+}
+
+tr.odd.gradeU td.sorting_3 {
+  background-color: #d1d1d1;
+}
+
+tr.even.gradeU td.sorting_1 {
+  background-color: #d5d5d5;
+}
+
+tr.even.gradeU td.sorting_2 {
+  background-color: #e2e2e2;
+}
+
+tr.even.gradeU td.sorting_3 {
+  background-color: #e2e2e2;
+}
+
+
+/*
+ * Row highlighting example
+ */
+.ex_highlight #example tbody tr.even:hover, #example tbody tr.even td.highlighted {
+  background-color: #ECFFB3;
+}
+
+.ex_highlight #example tbody tr.odd:hover, #example tbody tr.odd td.highlighted {
+  background-color: #E6FF99;
+}
+
+.ex_highlight_row #example tr.even:hover {
+  background-color: #ECFFB3;
+}
+
+.ex_highlight_row #example tr.even:hover td.sorting_1 {
+  background-color: #DDFF75;
+}
+
+.ex_highlight_row #example tr.even:hover td.sorting_2 {
+  background-color: #E7FF9E;
+}
+
+.ex_highlight_row #example tr.even:hover td.sorting_3 {
+  background-color: #E2FF89;
+}
+
+.ex_highlight_row #example tr.odd:hover {
+  background-color: #E6FF99;
+}
+
+.ex_highlight_row #example tr.odd:hover td.sorting_1 {
+  background-color: #D6FF5C;
+}
+
+.ex_highlight_row #example tr.odd:hover td.sorting_2 {
+  background-color: #E0FF84;
+}
+
+.ex_highlight_row #example tr.odd:hover td.sorting_3 {
+  background-color: #DBFF70;
+}
+
+
+/*
+ * KeyTable
+ */
+table.KeyTable td {
+  border: 3px solid transparent;
+}
+
+table.KeyTable td.focus {
+  border: 3px solid #3366FF;
+}
+
+table.display tr.gradeA {
+  background-color: #eeffee;
+}
+
+table.display tr.gradeC {
+  background-color: #ddddff;
+}
+
+table.display tr.gradeX {
+  background-color: #ffdddd;
+}
+
+table.display tr.gradeU {
+  background-color: #ddd;
+}
+
+div.box {
+  height: 100px;
+  padding: 10px;
+  overflow: auto;
+  border: 1px solid #8080FF;
+  background-color: #E5E5FF;
+}
+
+
+/*ticket details page */
+
+#details {
+  padding: 30px;
+  text-align: left;
+}
+
+#details table {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 10px 5px;
+  text-align: left;
+  width: 95%;
+}
+
+#details table tr td {
+    padding: 10px;
+    border: 1px dotted #ccc;
+    background:#fff;
+}
+
+#details .label {
+  width: 100px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: right;
+  background: #ddd;
+
+}
+#details h1 {
+  font-size: 24px;
+  font-weight: bold;
+  background: #95B9E7;
+  padding: 5px;
+}
+#details h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+}
